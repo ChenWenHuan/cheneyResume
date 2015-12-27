@@ -1,0 +1,180 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{陈}
+\familyname{文焕}
+%\title{Resume}                      % 可选项、如不需要可删除本行
+\address{江宁将军大道10号}{211100 南京}         % 可选项、如不需要可删除本行
+\mobile{+86~17768118624}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{wenhuan\_chen@163.com} % 可选项、如不需要可删除本行
+\homepage{github.com/ChenWenHuan} % 可选项、如不需要可删除本行
+\address{ShengTai Road 28, Nanjing }{Blog: http://blog.csdn.net/cheneywh} % 可选项、如不需要可删除本行
+%\fax{i.youku.com/juda1024} % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[64pt]{chenwenhuan.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+\section{Introduction}
+\cventry{}{Engaged in the embedded platform,mobile device software}{Ten Years}{}{}{}
+
+\section{专业技能}
+\cventry{1.}{语言}{精通C语言，熟悉C++，Java语言,了解汇编语言}{}{}{}{}
+\cventry{2.}{应用开发}{Android，iOS的应用开发，架构。掌握和熟悉业界先进的应用开发技术。}{}{}{}{}
+\cventry{3.}{Android}{掌握Android系统原理和开发调试,熟悉Android的系统架构}{}{}{}{}
+\cventry{4.}{Android APP}{掌握Android的App开发,并熟练运用常见的架构如:Jni架构，c/s架构}{}{}{}
+\cventry{5.}{Linux}{熟悉Linux应用开发,linux驱动(BSP)的开发调试工作。熟悉和掌握常见的调试和分析工具:makefile,gdb,objdump,elf等}{}{}{}
+\cventry{6.}{脚本}{熟悉linux shell 和python}{}{}{}{}
+\cventry{7.}{算法}{良好的算法基础，了解一般的机器学习算法}{}{}{}{}
+\cventry{8.}{版本管理}{精通Git版本管理工具，熟练使用svn，ClearCase}{}{}{}
+\cventry{9.}{代码编辑}{熟练使用Vim，Emacs，latex}{}{}{}{}
+
+
+
+\section{教育背景}
+\cventry{2001 -- 2005}{本科}{长春理工大学}{信息对抗专业}{}{}  % 第3到第6编码可留白
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{社区}
+\cventry{Blog}{\url{http://blog.csdn.net/cheneywh}}{}{}{}{}
+\cventry{GitHub}{\url{https://github.com/ChenWenHuan}}{}{}{}{}
+%\cventry{StackOverflow}{\url{http://stackoverflow.com/users/1983467/dinever}}{}{}{}{}
+
+\section{项目经历}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2015.05至今}
+{我的E家产品}
+{Android app,iOS}
+{南京咱家网络科技}{}
+{南京咱家网络成立于2015年5月，专注于家庭设备的互联，管理平台。
+ 参与并且架构了android，iOS APP。}
+
+
+\cventry{2011至2015.5}
+{HTC Engineer Tool}
+{Android app,Cts,Native App}
+{诚迈科技}{}
+{Engineer tool 是一个专门用来为工程模式开发的一个android
+ app，通过隐藏的按键模式进入这个app可以查看关于移动设备的信号强度等一系列工程信息。}
+
+\cventry{}
+{智能彩票选号引擎}
+{Android app,jni}
+{在bitBucket开源}{}
+{通过一系列的过滤规则和概率分布预测得出客户得需求选号，理论上增加概率}
+
+\cventry{}
+{OMADM信息采集软件}
+{Android \, COS}
+{诚迈科技}{}
+{本软件可运行在Android和Cos（Cos是国产手机操作系统）的一个远程采集和更新用户信息的APP，主要应用了业界移动采集信息的标准协议omadm协议。通过本软件，可以实现远程开解锁，用户信息采集，软件安装及更新等作用。}
+
+\cventry{}
+{COS系统Framework开发}
+{Android Framework,Cos}
+{诚迈科技}{}
+{中国自主操作系统\href{http://www.china-cos.com/site/index.html}{COS系统}的Framework开发，主要工作是参考了Android的Framework，利用C++重新实现了Android的Framework层，做到了与Android的接口兼容。主要负责wifi
+Framework接口的开发与调试。}
+
+\cventry{2012.07 2012.12}
+{智能电视盒子产品开发}
+{Android,全志平台}
+{诚迈科技}{}
+{一个基于全志平台的智能电视棒产品,主要让就有USB接口的非智能电视拥有智能电视的功能,产品参考苹果TV,小米盒子等相关的产品.\cvline{}{}{主要负责对各种开源库的整合}\cvline{}{}{对项目代码进行管理，版本发布。} }
+
+\cventry{2011.07 2012.07}
+{Ashare屏幕投影项目}
+{Android Framework,Native App,Jni,协议}
+{诚迈科技}{}
+{Ashare是一个让不同平台，不同设备屏幕相互分享的项目。 \cvline{}{}{主要负责UPNP协议的整合} \cvline{}{}{负责libjpeg－turbo开源库的整合.} \cvline{}{}{利用SIMD进行编解码的加速工作。} \cvline{}{}{负责虚拟驱动的开发。} \cvline{}{}{负责本项目的专利文档撰写与申请。} }
+
+
+\section{语言技能}
+\cvline{英语}{\textbf{CET-6: 524}，擅长读写，经常阅读英文文档、教程，并在Reddit等社区与外国人交流。}
+\cvline{普通话}{母语}
+
+\section{计算机技能}
+\cvline{编程语言}{Python == C > PHP == Javascript == Java  > C++ }
+\cvline{数据库}{MySQL, MongoDB}
+\cvline{Web框架}{Django, Tornado, Express(Node.js)}
+\cvline{工具}{Linux, Vim, Git, \LaTeX}
+
+
+\section{校园经历} % (fold)
+\cventry{2012--2013}
+{北京邮电大学吉他协会会长}{}{}{}{在任期间负责在校内科学会堂策划举办三次校园大型摇滚演出“北邮摇滚夜”，并在北京各酒吧合作举办过校园摇滚专场，开设过多期校园吉他班，组织多次吉他团购。}
+\cventry{2011--2012}
+{音乐节校园票务代理}{}{}{}{在摩登天空音乐节、草莓音乐节、东派地坛民谣音乐节期间负责本校学生票代售。}
+\cventry{2011, 05}
+{北京邮电大学阳光志愿者协会}{}{}{}{参与志愿者活动，并为该协会创作会歌。}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.
